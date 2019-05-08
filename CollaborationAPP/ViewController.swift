@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
+    var advice:[String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
       
@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     @IBAction func AnswerButtonAct(_ sender: UIButton) {// if the user clicks to get an answer
         if(questiontextFieldOutlet.text != nil){// if the user has asked a question checks to see if the text field has input
             
-            
+            let rng = arc4random_uniform(UInt32(UInt(0))) + UInt32(25)
         }
         else{
             
