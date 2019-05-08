@@ -17,5 +17,10 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func questiontextFieldAction(_ sender: UITextField) {
+    }
+    @IBOutlet weak var ball8Outlet: UIImageView!
+    @IBOutlet weak var questiontextFieldOutlet: UITextField!
+    @IBOutlet weak var answerTextViewOutlet: UITextView!
 }
 
