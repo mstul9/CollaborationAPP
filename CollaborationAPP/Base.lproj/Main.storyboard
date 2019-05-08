@@ -40,11 +40,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBk-5E-QtW">
+                                <rect key="frame" x="89" y="113" width="196" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="get the magic 8 balls answer"/>
+                                <connections>
+                                    <action selector="AnswerButtonAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6GH-5r-ymD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.00014873206" green="1" blue="0.00023073437560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="AnswerButtonOut" destination="FBk-5E-QtW" id="qYJ-Ju-y0x"/>
                         <outlet property="answerTextViewOutlet" destination="r7a-D0-YQA" id="K6P-19-od1"/>
                         <outlet property="ball8Outlet" destination="lPQ-xF-53e" id="Uzi-ad-c2P"/>
                         <outlet property="questiontextFieldOutlet" destination="dSQ-6W-Cav" id="2mO-BY-3zp"/>

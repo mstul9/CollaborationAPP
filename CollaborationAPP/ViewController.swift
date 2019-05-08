@@ -17,10 +17,14 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func AnswerButtonAct(_ sender: UIButton) {
+    }
     @IBAction func questiontextFieldAction(_ sender: UITextField) {
     }
     @IBOutlet weak var ball8Outlet: UIImageView!
     @IBOutlet weak var questiontextFieldOutlet: UITextField!
     @IBOutlet weak var answerTextViewOutlet: UITextView!
+    
+    @IBOutlet weak var AnswerButtonOut: UIButton!
 }
 
