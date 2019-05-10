@@ -12,6 +12,8 @@
 		844783BE2281D3DC00E4F769 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844783BC2281D3DC00E4F769 /* Main.storyboard */; };
 		844783C02281D3DE00E4F769 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844783BF2281D3DE00E4F769 /* Assets.xcassets */; };
 		844783C32281D3DE00E4F769 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844783C12281D3DE00E4F769 /* LaunchScreen.storyboard */; };
+		C7AE9FC62285C5BA0007F2A7 /* PickUpLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AE9FC52285C5BA0007F2A7 /* PickUpLines.swift */; };
+		C7AE9FC82285C96D0007F2A7 /* BadAdvice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AE9FC72285C96D0007F2A7 /* BadAdvice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		844783BF2281D3DE00E4F769 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		844783C22281D3DE00E4F769 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		844783C42281D3DE00E4F769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7AE9FC52285C5BA0007F2A7 /* PickUpLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpLines.swift; sourceTree = "<group>"; };
+		C7AE9FC72285C96D0007F2A7 /* BadAdvice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadAdvice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				844783B82281D3DC00E4F769 /* AppDelegate.swift */,
 				844783BA2281D3DC00E4F769 /* ViewController.swift */,
 				844783BC2281D3DC00E4F769 /* Main.storyboard */,
+				C7AE9FC72285C96D0007F2A7 /* BadAdvice.swift */,
+				C7AE9FC52285C5BA0007F2A7 /* PickUpLines.swift */,
 				844783BF2281D3DE00E4F769 /* Assets.xcassets */,
 				844783C12281D3DE00E4F769 /* LaunchScreen.storyboard */,
 				844783C42281D3DE00E4F769 /* Info.plist */,
@@ -136,7 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				844783BB2281D3DC00E4F769 /* ViewController.swift in Sources */,
+				C7AE9FC82285C96D0007F2A7 /* BadAdvice.swift in Sources */,
 				844783B92281D3DC00E4F769 /* AppDelegate.swift in Sources */,
+				C7AE9FC62285C5BA0007F2A7 /* PickUpLines.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
