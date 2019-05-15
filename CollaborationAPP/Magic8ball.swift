@@ -1,29 +1,36 @@
 //
 //  ViewController.swift
 //  CollaborationAPP
-//mark
+// Mark Stul, Sam Shokodko and Abeed
 //  Created by Mark Stul 2019 on 5/7/19.
 //  Copyright © 2019 SHS. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class Magic8ball: UIViewController {
 
     var advice:[String] = ["outlook not so good","my reply is no","nope","my sources say no","very doubtful","dont count on it","absouletly no","better not tell you know","yes","heck-yes","signs point to yes", "outlook good","for sure"]
     override func viewDidLoad() {
         super.viewDidLoad()
+        Imageball.isHidden = true
+         answerTextViewOutlet.isHidden = true
         
       
     }
 
   @IBOutlet weak var answerTextViewOutlet: UITextView!
     @IBAction func AnswerButtonAct(_ sender: UIButton) {// if the user clicks to get an answer
-        if(questiontextFieldOutlet.text != nil && questiontextFieldOutlet.text != "" && questiontextFieldOutlet.text != " " ){// if the user has asked a question checks to see if the text field has input that is not a space
+        if(questiontextFieldOutlet.text != nil && questiontextFieldOutlet.text != "" && questiontextFieldOutlet.text != " " ){
+            // if the user has asked a question checks to see if the text field has input that is not a space
             
             
             let rng = arc4random_uniform(UInt32(0) + UInt32(12))
             print(rng)
+            
+            Imageball.isHidden = false
+            answerTextViewOutlet.isHidden = false
+            print(advice[Int(rng)])
             answerTextViewOutlet.text = advice[Int(rng)]
         }
         else{
@@ -42,6 +49,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var questiontextFieldOutlet: UITextField!
   
     
+    @IBOutlet weak var Imageball: UIImageView!
     @IBOutlet weak var AnswerButtonOut: UIButton!
 }
 
