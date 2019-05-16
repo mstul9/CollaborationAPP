@@ -50,7 +50,7 @@ class PickUpLines: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource 
     override func becomeFirstResponder() -> Bool {
         return true
     }
-    @IBOutlet weak var PickView: UIPickerView!
+    @IBOutlet weak var PickView: UIPickerView!// outlet for picerview
     func pickerView(
         _ pickerView: UIPickerView,
         didSelectRow row: Int,
@@ -80,6 +80,6 @@ class PickUpLines: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource 
 }
     @IBOutlet weak var thePickthing: UIPickerView!
     @IBAction func PickaNewCat(_ sender: UIButton) {
-        thePickthing.isHidden = false
+        thePickthing.isHidden = false// hides the pickerview
     }
 }
