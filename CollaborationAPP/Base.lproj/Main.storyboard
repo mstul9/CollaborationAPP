@@ -224,7 +224,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b1q-00-soN">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b1q-00-soN">
                                 <rect key="frame" x="122" y="92" width="180" height="30"/>
                                 <color key="backgroundColor" red="0.00014873206" green="1" blue="0.00023073437560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -248,6 +248,7 @@
                     </view>
                     <connections>
                         <outlet property="adviceText" destination="dQi-Hw-YlD" id="Ygm-Nr-smR"/>
+                        <outlet property="questionText" destination="b1q-00-soN" id="6va-bF-XEC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cpM-nc-FXu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -283,8 +284,8 @@
                                     <segue destination="xs4-ai-aqA" kind="show" id="4WY-pc-VN8"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The assitant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D10-Fo-rWl">
-                                <rect key="frame" x="16" y="64" width="334" height="78"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="THE HELPER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D10-Fo-rWl">
+                                <rect key="frame" x="6" y="74" width="362" height="78"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="65"/>
                                 <color key="textColor" red="0.1687764098" green="0.9754088407" blue="0.093941901829999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -329,10 +330,10 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="&quot;pick a category&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XXd-eF-cD9">
-                                <rect key="frame" x="75" y="99" width="240" height="32"/>
+                                <rect key="frame" x="75" y="99" width="240" height="103"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="sxE-VC-9Ky"/>
+                                    <constraint firstAttribute="height" constant="103" id="sxE-VC-9Ky"/>
                                 </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -359,7 +360,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Jy5-dr-i8y" firstAttribute="top" secondItem="XXd-eF-cD9" secondAttribute="bottom" constant="79" id="3XL-ea-36h"/>
+                            <constraint firstItem="Jy5-dr-i8y" firstAttribute="top" secondItem="XXd-eF-cD9" secondAttribute="bottom" constant="8" id="3XL-ea-36h"/>
                             <constraint firstItem="jlk-gy-Z4o" firstAttribute="leading" secondItem="BWo-pf-bjs" secondAttribute="leading" constant="279" id="4ZQ-R2-ltX"/>
                             <constraint firstItem="Jy5-dr-i8y" firstAttribute="leading" secondItem="kt1-ck-7Y8" secondAttribute="leading" id="AIy-fN-1nB"/>
                             <constraint firstItem="XXd-eF-cD9" firstAttribute="leading" secondItem="kxP-dc-ZIr" secondAttribute="leading" id="CKp-aF-qxB"/>

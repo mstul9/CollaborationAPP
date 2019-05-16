@@ -16,7 +16,7 @@ class BadAdvice: UIViewController {
        
     }
     @IBAction func Advice(_ sender: UIButton) {
-        if(questionText.text != nil && questionText.text != "" && questionText.text != " " ){// if the user has asked a question checks to see if the text field has input that is not a space
+        if(questionText.text != "" && questionText.text != " " ){// if the user has asked a question checks to see if the text field has input that is not a space
             
             
             let rng = arc4random_uniform(UInt32(0) + UInt32(23))
