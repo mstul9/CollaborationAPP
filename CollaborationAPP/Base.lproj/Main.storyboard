@@ -60,19 +60,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="8ball" translatesAutoresizingMaskIntoConstraints="NO" id="lPQ-xF-53e">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball8" translatesAutoresizingMaskIntoConstraints="NO" id="lPQ-xF-53e">
                                 <rect key="frame" x="0.0" y="188" width="375" height="357"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="357" id="Vxz-3O-R45"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="r7a-D0-YQA">
-                                <rect key="frame" x="145" y="307" width="84" height="79"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBk-5E-QtW">
                                 <rect key="frame" x="89.5" y="113" width="196" height="30"/>
                                 <state key="normal" title="get the magic 8 balls answer"/>
@@ -90,13 +83,20 @@
                                     <action selector="questiontextFieldAction:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="rNE-EA-b1f"/>
                                 </connections>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8 ball" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vin-Pk-cLp">
+                                <rect key="frame" x="140" y="335" width="96" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lPQ-xF-53e" secondAttribute="bottom" constant="122" id="4vN-bL-3mq"/>
                             <constraint firstAttribute="trailing" secondItem="lPQ-xF-53e" secondAttribute="trailing" id="8fJ-JK-dbD"/>
                             <constraint firstItem="lPQ-xF-53e" firstAttribute="top" secondItem="FBk-5E-QtW" secondAttribute="bottom" constant="45" id="CTs-cZ-yhl"/>
-                            <constraint firstItem="lPQ-xF-53e" firstAttribute="centerX" secondItem="r7a-D0-YQA" secondAttribute="centerX" id="ch2-9v-ThM"/>
                             <constraint firstItem="lPQ-xF-53e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lac-O3-VcR"/>
                             <constraint firstItem="lPQ-xF-53e" firstAttribute="centerX" secondItem="FBk-5E-QtW" secondAttribute="centerX" id="t3Y-GF-JQb"/>
                         </constraints>
@@ -105,14 +105,14 @@
                     <connections>
                         <outlet property="AnswerButtonOut" destination="FBk-5E-QtW" id="qYJ-Ju-y0x"/>
                         <outlet property="Imageball" destination="lPQ-xF-53e" id="JmK-wB-4QR"/>
-                        <outlet property="answerTextViewOutlet" destination="r7a-D0-YQA" id="K6P-19-od1"/>
+                        <outlet property="answerLabel" destination="vin-Pk-cLp" id="gBg-ZL-z7i"/>
                         <outlet property="ball8Outlet" destination="lPQ-xF-53e" id="Uzi-ad-c2P"/>
                         <outlet property="questiontextFieldOutlet" destination="dSQ-6W-Cav" id="2mO-BY-3zp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2818" y="99"/>
+            <point key="canvasLocation" x="2816.8000000000002" y="98.50074962518741"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="00J-Od-GUM">
@@ -389,7 +389,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="8ball" width="300" height="225"/>
+        <image name="ball8" width="300" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="QfL-0L-LFw"/>
